@@ -3,14 +3,32 @@ const soundButton = document.getElementById('sound-button');
 const backgroundVideo = document.getElementById('background-video');
 const eyeToggle = document.getElementById('eye-toggle');
 
-// Add toggle functionality for the sound button
+// Sound button
+const soundButton = document.getElementById('sound-button');
+
+// Initialize YouTube player
+let player;
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('yt-player', {
+        events: {
+            'onReady': onPlayerReady
+        }
+    });
+}
+
+function onPlayerReady(event) {
+    // Initially muted
+    player.mute();
+}
+
+// Toggle sound button
 soundButton.addEventListener('click', () => {
-    if (backgroundVideo.muted) {
-        backgroundVideo.muted = false; // Unmute the video
-        soundButton.innerHTML = '<i class="fas fa-volume-up"></i>'; // Change to mute icon
+    if (player.isMuted()) {
+        player.unMute();
+        soundButton.innerHTML = '<i class="fas fa-volume-up"></i>';
     } else {
-        backgroundVideo.muted = true; // Mute the video
-        soundButton.innerHTML = '<i class="fas fa-volume-mute"></i>'; // Change to volume icon
+        player.mute();
+        soundButton.innerHTML = '<i class="fas fa-volume-mute"></i>';
     }
 });
 
@@ -103,4 +121,5 @@ function sendMail() {
         }
     ).catch((err) => console.log(err));
 }
+
 
