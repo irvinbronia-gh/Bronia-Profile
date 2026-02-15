@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- FontAwesome -->
+    
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "juhoTTNmHAB8tfwqO",
+        });
+    })();
+    </script>
+
+    <title>Bronia Profile</title>
+</head>
+<body>
+
+
+    <!-- Sound button (initially hidden) -->
+    <button id="sound-button" class="sound-button">
+        <i class="fas fa-volume-mute"></i>
+    </button>
+
+    <!-- Eye button toggle -->
+    <input type="checkbox" id="eye-toggle" class="eye-toggle">
+    <label for="eye-toggle" class="eye-button"><i class="fas fa-eye"></i></label>
+
+
+
+    <video id="background-video" autoplay loop muted class="back-video" poster="Pics/star-rail-dream's-edge hd.gif">
+        <source src="vids/HSR Background.mp4" type="video/mp4">
+    </video>
+
+
+    <div class="content">
+        <div class="header" onclick="changeText()">
+            <div class="header-titles" id="headerText">
+                FIREFLY X IRVIN
+            </div>
+            
+        </div>
+            <div class="tabs">
+                <input type="radio" class="tabs__radio" name="tabs-profile" id="tab-home" checked>
+                <label for="tab-home" class="tabs__label">Home</label>
+                <div class="tabs__content">
+                    <div class="home-container">
+                        <div class="home-image-left">
+                            <img src="Pics\Firefly Home.png">
+                        </div>
+
+                        <div class="home-text">
+                        Hello this is the profile page of Irvin C. Bronia. <br>
+                        <br>
+                        He is a student in CNSC with the Course of BSIT.<br>
+                        <br>
+                        This Web Page serves both as an introduction for Irvin C. Bronia. <br>
+                        <br>
+                        As well as his individual project for the Application Development and Emerging Technologies Subject.<br>
+                        <br>
+                        This Webpage uses the standard Html and CSS as well as JavaScript. <br>
+                        <br>
+                        This Web Page is bit dynamic allowing it to be viewed in most devices and still have a coherent layout. <br>
+                        <br>
+                        The Web Page is themed around the game "Honkai:Star-Rail"<br>
+                        <br>
+                        Specifically the character "Firefly" where you can see her the most in this Web Page <br>
+                        <br>
+                        See more about Irvin by clicking the tabs above!!<br>
+                        <br>
+                        There are secret feature on this webpage try to find it!! <br>
+                        <br>
+                        <i>Hints: It is more than what meets the  <b>"EYE"</b>, brings calming <b>"SOUNDS"</b> to the ear</i>
+                        <br>
+                        <i>Hints: <b>"X"</b> Marks the Spot</i>
+
+                        </div>
+
+                        <div class="home-image-right">
+                            <img src="Pics/Fu Xuan Home.png">
+                        </div>
+                    </div>
+                </div>
+
+            
+                <input type="radio" class="tabs__radio" name="tabs-profile" id="tab-about-me">
+                <label for="tab-about-me" class="tabs__label">About Me</label>
+                <div class="tabs__content">
+
+                    <div class="about-me-container">
+                        <div class="about-me-container-texts">
+                            <div class="about-me-text-header">
+                                WHO IS IRVIN C. BRONIA????
+                            </div>
+
+                            <div class="about-me-text">
+                                Irvin C. Bronia, born and raised in the town of Labo, Camarines Norte.<br>
+                                Is currently a student of Camarines Norte State College.<br>
+                                Brought to this world on November 2, 2004.<br>
+                                And is currently aged 20 of writing this.<br>
+                                He currently resides in the small barangay of San Francisco. <br>
+                            </div>
+                        </div>
+
+                        <div class="about-me-image">
+                            <img src="Pics\Family\Irvin.jpg">
+                        </div>
+
+                    </div>
+
+                    <div class="about-me-container-reverse">
+                        <div class="about-me-container-texts">
+                            <div class="about-me-text-header">
+                                HOW FAR HAS HE COME?
+                            </div>
+
+                            <div class="about-me-text">
+                                He stared his educational journey at the local daycare in the barangay.<br>
+                                Attended Kindergarten at the local elementary (Labo Elementary School). <br>
+                                Completed his Grade 1-6 in the same local elementary.<br>
+                                Completed his Junior High School (Grade 7-10) at Labo Science and Technology High School.<br>
+                                Completed his Senior High School (Grade 11-12) in the same School.<br>
+                                Now Second year at Camarines Norte State College with the Course of Bachelor of Science in Information Technology. <br>
+                            </div>
+                        </div>
+
+                        <div class="about-me-image">
+                            <img src="Pics/Pom-Pom 6.png">
+                        </div>
+                        
+                    </div>
+
+                    <div class="about-me-container">
+                        <div class="about-me-container-texts">
+                            <div class="about-me-text-header">
+                                WHAT DOES IRVIN LIKE?
+                            </div>
+
+                            <div class="about-me-text">
+                                As you can probably guess already he REALLY LOVES Anime.<br>
+                                He likes anything Anime Related.<br>
+                                This includes shows like "Gurren Laggan", "One Piece" and many many more.<br>
+                                He likes Manga, the first manga he technically finished is a manga named "Witch Craft Works"<br>
+                                From then he continued to read countless amounts pages.<br>
+                                He also plays a lot the Gacha games.<br>
+                                A game genre typically anime coded popularized in anime culture.  <br>
+                                Where you essentially pull or roll for the characters in the game.<br>
+                                His first ever Gacha game was the game called "Azur Lane".<br>
+                                From then he just kept falling and falling in the gacha game rabbit hole.<br>
+                                Honkai:Star-Rail the game this Web Page was designed after, is his currently favorite Gacha game. <br>
+                                Of course he also likes J-pop. <br>
+                                This year he has listen to the track "くちづけ (Kuzhizuke)Diamond" by Weaver for a total of 735 times and counting. <br> 
+                                Though he has listened to this song and artist for a long time his favorite j-pop artist is actually "Deco*27". <br>
+                                Deco*27 is a vocaloid producer, where most of his songs fit into what Irvin likes the most. <br>
+                            </div>
+                        </div>
+
+                        <div class="about-me-image">
+                            <img src="Pics\Firefly Home.png">
+                        </div>
+
+                    </div>
+
+                    <div class="about-me-container-reverse">
+                        <div class="about-me-container-texts">
+                            <div class="about-me-text-header">
+                                WHY DOES HE LIKE THOSE?
+                            </div>
+
+                            <div class="about-me-text">
+                                He likes those things because since at a young age he was already exposed to anime and japan culture. <br>
+                                He would watch "Digimon", "Sailor Moon", "Ultraman" and others at thier CRT TV.<br>
+                                Though admittedly, he probably didn't fully understand any of it.<br>
+                                And as time continued he didnt't grow out of it and continued to follow the culture.<br>
+                                Especially now since anime has become main stream unlike back then you were made fun of if you dont like anime.<br>
+                                Now you are made fun of if you don't watch anime.<br>
+                            </div>
+                        </div>
+
+                        <div class="about-me-image">
+                            <img src="Pics/Firefly 1.png">
+                        </div>
+                        
+                    </div>
+
+                    
+                    <div class="about-me-container">
+                        <div class="about-me-container-texts">
+                            <div class="about-me-text-header">
+                                WHAT IS HIS PLAN FOR THE VERY NEAR FUTURE?
+                            </div>
+
+                            <div class="about-me-text">
+                                As of right now he doesn't have any grand or big goal.<br>
+                                His current objective now is to finish his course and graduate.<br>
+                                After that he isn't sure what to do but will probably start working.<br>
+                            </div>
+                        </div>
+
+                        <div class="about-me-image">
+                            <img src="Pics/Fu Xuan 3.png">
+                        </div>
+
+                    </div>
+
+                    <div class="about-me-container-reverse">
+                        <div class="about-me-container-texts">
+                            <div class="about-me-text-header">
+                                    Trivias!!
+                            </div>
+
+                            <div class="about-me-text">
+                                He has a streak in Duolingo Japan of 969 days. <br>
+                                And accordimg to Duolingo is a top 9% learner this year. <br>
+                                In the game Wuthering Waves he has an: <br>
+                                Average Pity:30.10-Top 4.77% ✨-Luckier than 95.23% of players.<br>
+                                Pull Ratio:3.15%-Top 3.33% ✨-Luckier than 96.67% of players.<br>
+                                In the game Honkai:Star-Rail he has logged in almost everyday since lauch.<br>
+                                His favorite Japanese Voice Actors are Miku Itou and Saori Hayami. <br>
+                            </div>
+                        </div>
+
+                        <div class="about-me-image">
+                            <img src="Pics/Fu Xuan 1.png">
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <input type="radio" class="tabs__radio" name="tabs-profile" id="tab-my-family">
+                <label for="tab-my-family" class="tabs__label">My Family</label>
+                <div class="tabs__content">
+
+                    <div class="family-container">
+                        <div class="family-img-name">
+                            <div class="family-image-left">
+                                <img src="Pics/Family/carlos_enhanced.jpg">
+                            </div>
+
+                            <div class="family-name">
+                                Carlos
+                            </div>
+                        </div>
+
+                        <div class="family-text">
+                            This is my father. <br>
+                            <br>
+                            He was born and raised in Labo Camarines Norte, just like me.<br>
+                            <br>
+                            He worked in many places and in one of those places is where he met my mother. <br>
+                            <br>
+                            He is not only hardworking but very practical and big DIY enthuasiast. <br>
+                            <br>
+                            Most things in our home was made by him this may include our bedframes the roof of our home and many others. <br>
+                            <br>
+                            I always see him watching many technical videos relating to electronics and such. <br>
+                            <br>
+                            I have learned many real life skills from him. <br>
+                            <br>
+                        </div>
+
+                        <div class="family-image-left">
+
+                            <div class="family-image-right">
+                                <img src="Pics/Jing Yuan 1.png">
+                            </div>
+
+                            <div class="icon-name">
+                                Jing Yuan
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="family-container">
+                        <div class="family-img-name">
+                            <div class="family-image-left">
+                                <img src="Pics/Family/arlene_enhanced.jpg">
+                            </div>
+
+                            <div class="family-name">
+                                Arlene
+                            </div>
+                        </div>
+
+                        <div class="family-text">
+                            This is my mother.<br>
+                            <br>
+                            She was born and raised in Tarlac City. <br>
+                            <br>
+                            But moved to the home town of my Father once they got together. <br>
+                            <br>
+                            My mother is a very hard working person. <br>
+                            <br>
+                            She is always looking for ways to optimize how our store looks. <br>
+                            <br>
+                            And looking online for products to sell. <br>
+                            <br>
+                            I often hear a Online Seller from Facebook on her Phone. <br>
+                            <br>
+                        </div>
+
+                        <div class="family-image-left">
+
+                            <div class="family-image-right">
+                                <img src="Pics/6_Himeko.png">
+                            </div>
+
+                            <div class="icon-name">
+                                Himeko
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="family-container">
+                        <div class="family-img-name">
+                            <div class="family-image-left">
+                                <img src="Pics/Family/ivy_enhanced.jpg">
+                            </div>
+
+                            <div class="family-name">
+                                Ivy Carla
+                            </div>
+                        </div>
+                        <div class="family-text">
+                            This is my Eldest Sister.<br>
+                            <br>
+                            She is 5 years older than me. <br>
+                            <br>
+                            She graduated from Camarines Norte State College about two years ago. <br>
+                            <br>
+                            She is now working as a call center agent in Naga City for at least a year now. <br>
+                            <br>
+                            She is the biggest influence on why I like <b>Anime</b> so much. <br>
+                            <br>
+                            This is because when we where little she would often invite me to watch anime with her. <br>
+                            <br>
+                        </div>
+
+                        <div class="family-image-left">
+
+                            <div class="family-image-right">
+                                <img src="Pics/Guinaifen 2.png">
+                            </div>
+
+                            <div class="icon-name">
+                                Guinaifen
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="family-container">
+                        <div class="family-img-name">
+                            <div class="family-image-left">
+                                <img src="Pics/Family/ivanmae_enhanced.jpg">
+                            </div>
+
+                            <div class="family-name">
+                                Ivanmae
+                            </div>
+                        </div>
+
+                        <div class="family-text">
+                            This is my second eldest sister. <br>
+                            <br>
+                            She is 1 year older than me but 2 years older in school. <br>
+                            <br>
+                            She is currently in her last year of college. <br>
+                            <br>
+                            When we were little we would often go out and play with the other kids from the neighborhood. <br>
+                            <br>
+                            These days we don't spend much time together anymore but thats okay as we have still have a pretty good relationship. <br>
+                            <br>
+                        </div>
+
+                        <div class="family-image-left">
+
+                            <div class="family-image-right">
+                                <img src="Pics/Hanya 1.png">
+                            </div>
+
+                            <div class="icon-name">
+                                Hanya
+                            </div>
+                        </div>
+                    </div>
+                                
+                </div>
+
+                <input type="radio" class="tabs__radio" name="tabs-profile" id="tab-gallery" >
+                <label for="tab-gallery" class="tabs__label">Gallery</label>
+                <div class="tabs__content">
+                    <div class="gallery-header-text">
+                        THIS IS MY GALLERY WHERE I WILL BE PUTTING ANYTHING I LIKE
+                        
+                    </div>
+
+                  <!-- Second Carousel -->
+                    <div class="gallery-container">
+                        <div class="gallery-text">
+                        </div>
+                        <div class="three-way-slider">
+                            
+                            <div class="three-way-slider-container">
+                                <div class="three-way-slider-container-text">
+                                    <button class="carousel__button-three carousel__button--prev" onclick="changeSlide(-1, 'carousel1')">❮</button>
+                                    <div class="three_way_header"> Pets</div>
+                                    <button class="carousel__button-three carousel__button--next" onclick="changeSlide(1, 'carousel1')">❯</button>
+                                </div>
+                                <div class="carousel" id="carousel1">
+                                <div class="carousel__slides-three">
+                                    <div class="carousel__slide active">
+                                        <img src="Pics/Pets/Pets1.jpg" alt="Pet 1">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Pets/Pets2.jpg" alt="Pet 2">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Pets/Pets3.jpg" alt="Pet 3">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Pets/Pets4.jpg" alt="Pet 4">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Pets/Pets5.jpg" alt="Pet 5">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Pets/Pets6.jpg" alt="Pet 6">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Pets/Pets7.jpg" alt="Pet 7">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Pets/Pets8.jpg" alt="Pet 8">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Pets/Pets9.jpg" alt="Pet 9">
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    
+                            <div class="three-way-slider-container">
+                                <div class="three-way-slider-container-text">
+                                    <button class="carousel__button-three carousel__button--prev" onclick="changeSlide(-1, 'carousel5')">❮</button>
+                                        <div class="three_way_header"> My Hobbies</div>
+                                    <button class="carousel__button-three carousel__button--next" onclick="changeSlide(1, 'carousel5')">❯</button>
+                                </div>
+                                <div class="carousel-slide-three" id="carousel5">
+                                    <div class="carousel__slide active">
+                                        <img src="Pics/Hobbies/honkai-star-rail_6p59.jpg" alt="Image 0">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Hobbies/Azur_Lane_English_Release_Logo.png" alt="Image 1">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Hobbies/arknights logo.jpg" alt="Image 2">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Hobbies/Bang Dream Logo.png" alt="Image 3">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Hobbies/blue archive logo.jpg" alt="Image 4">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Hobbies/deco.jpg" alt="Image 5">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Hobbies/gensin logo.png" alt="Image 6">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Hobbies/Honkai_Star_Rail_(logo).png" alt="Image 7">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Hobbies/PJSekai.png" alt="Image 8">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Hobbies/wuwa logo.png" alt="Image 9">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Hobbies/zzz logo.png" alt="Image 10">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="carousel__slide">
+                                <img src="Pics/Hobbies/gensin logo.png" alt="Image 6">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Carousel -->
+                    <div class="gallery-container">
+                        <div class="gallery-text">
+                            My Favorite Characters from Honkai:Star Rail:
+                        </div>
+                        <div class="three-way-slider">
+                            
+                            <div class="three-way-slider-container">
+                                <div class="three-way-slider-container-text">
+                                    <button class="carousel__button-three carousel__button--prev" onclick="changeSlide(-1, 'carousel2')">❮</button>
+                                    <div class="three_way_header"> Fu Xuan</div>
+                                    <button class="carousel__button-three carousel__button--next" onclick="changeSlide(1, 'carousel2')">❯</button>
+                                </div>
+                                <div class="carousel" id="carousel2">
+                                <div class="carousel__slides-three">
+                                    <div class="carousel__slide active">
+                                        <img src="Pics/Anime Carousel 2/Img0.jpg" alt="Image 0">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img1.jpg" alt="Image 1">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img2.jpg" alt="Image 2">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img3.jpg" alt="Image 3">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img4.jpg" alt="Image 4">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img5.jpg" alt="Image 5">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img6.jpg" alt="Image 6">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img7.jpg" alt="Image 7">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img8.jpg" alt="Image 8">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img9.jpg" alt="Image 9">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img10.jpg" alt="Image 10">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img11.jpg" alt="Image 11">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img12.jpg" alt="Image 12">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img13.jpg" alt="Image 13">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img14.jpg" alt="Image 14">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img15.jpg" alt="Image 15">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img16.jpg" alt="Image 16">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img17.jpg" alt="Image 17">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img18.jpg" alt="Image 18">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img19.jpg" alt="Image 19">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img20.jpg" alt="Image 20">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img21.jpg" alt="Image 21">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img22.jpg" alt="Image 22">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 2/Img23.jpg" alt="Image 23">
+                                    </div>
+                                    
+                                 
+
+                                    </div>
+
+                                </div>
+                            </div>
+                    
+                            <div class="three-way-slider-container">
+                                <div class="three-way-slider-container-text">
+                                    <button class="carousel__button-three carousel__button--prev" onclick="changeSlide(-1, 'carousel3')">❮</button>
+                                        <div class="three_way_header"> Firefly</div>
+                                    <button class="carousel__button-three carousel__button--next" onclick="changeSlide(1, 'carousel3')">❯</button>
+                                </div>
+                                <div class="carousel-slide-three" id="carousel3">
+                                    <div class="carousel__slide active">
+                                        <img src="Pics/Anime Carousel 1/Img0.jpg" alt="Image 0">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img1.jpg" alt="Image 1">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img2.jpg" alt="Image 2">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img3.jpg" alt="Image 3">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img4.jpg" alt="Image 4">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img5.jpg" alt="Image 5">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img6.jpg" alt="Image 6">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img7.jpg" alt="Image 7">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img8.jpg" alt="Image 8">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img9.jpg" alt="Image 9">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img10.jpg" alt="Image 10">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img11.jpg" alt="Image 11">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img12.jpg" alt="Image 12">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img13.jpg" alt="Image 13">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img14.jpg" alt="Image 14">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img15.jpg" alt="Image 15">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img16.jpg" alt="Image 16">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img17.jpg" alt="Image 17">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img18.jpg" alt="Image 18">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img19.jpg" alt="Image 19">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img20.jpg" alt="Image 20">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img21.jpg" alt="Image 21">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img22.jpg" alt="Image 22">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img23.jpg" alt="Image 23">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img24.jpg" alt="Image 24">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img25.jpg" alt="Image 25">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img26.jpg" alt="Image 26">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img27.jpg" alt="Image 27">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img28.jpg" alt="Image 28">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img29.jpg" alt="Image 29">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/img30.jpg" alt="Image 30">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img31.jpg" alt="Image 31">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img32.jpg" alt="Image 32">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img33.jpg" alt="Image 33">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img34.jpg" alt="Image 34">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img35.jpg" alt="Image 35">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img36.jpg" alt="Image 36">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img37.jpg" alt="Image 37">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img38.jpg" alt="Image 38">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img39.jpg" alt="Image 39">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img40.jpg" alt="Image 40">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img41.jpg" alt="Image 41">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img42.jpg" alt="Image 42">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img43.jpg" alt="Image 43">
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <img src="Pics/Anime Carousel 1/Img43.jpg" alt="Image 43">
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="three-way-slider-container">
+                                <div class="three-way-slider-container-text">
+                                    <button class="carousel__button-three carousel__button--prev" onclick="changeSlide(-1, 'carousel4')">❮</button>
+                                        <div class="three_way_header"> Miscellaneous</div>
+                                    <button class="carousel__button-three carousel__button--next" onclick="changeSlide(1, 'carousel4')">❯</button>
+
+                                </div>
+                                <div class="carousel" id="carousel4">
+                                    <div class="carousel__slides-three">
+                                        <div class="carousel__slide active">
+                                            <img src="Pics/Anime Carousel 3/Img0.jpg" alt="Image 0">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img1.jpg" alt="Image 1">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img2.jpg" alt="Image 2">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img3.jpg" alt="Image 3">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img4.jpg" alt="Image 4">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img5.jpg" alt="Image 5">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img6.jpg" alt="Image 6">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img7.jpg" alt="Image 7">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img8.jpg" alt="Image 8">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img9.jpg" alt="Image 9">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img10.jpg" alt="Image 10">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img11.jpg" alt="Image 11">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img12.jpg" alt="Image 12">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img13.jpg" alt="Image 13">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img14.jpg" alt="Image 14">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img15.jpg" alt="Image 15">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img16.jpg" alt="Image 16">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img17.jpg" alt="Image 17">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img18.jpg" alt="Image 18">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img19.jpg" alt="Image 19">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img20.jpg" alt="Image 20">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img21.jpg" alt="Image 21">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img22.jpg" alt="Image 22">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img23.jpg" alt="Image 23">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img24.jpg" alt="Image 24">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img25.jpg" alt="Image 25">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img26.jpg" alt="Image 26">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img27.jpg" alt="Image 27">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img28.jpg" alt="Image 28">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img29.jpg" alt="Image 29">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img30.jpg" alt="Image 30">
+                                        </div>
+                                        <div class ="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img31.jpg" alt="Image 31">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img32.jpg" alt="Image 32">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img33.jpg" alt="Image 33">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img34.jpg" alt="Image 34">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img35.jpg" alt="Image 35">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img36.jpg" alt="Image 36">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img37.jpg" alt="Image 37">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img38.jpg" alt="Image 38">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img39.jpg" alt="Image 39">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img40.jpg" alt="Image 40">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img41.jpg" alt="Image 41">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img42.jpg" alt="Image 42">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img43.jpg" alt="Image 43">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img44.jpg" alt="Image 44">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img45.jpg" alt="Image 45">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img46.jpg" alt="Image 46">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img47.jpg" alt="Image 47">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img48.jpg" alt="Image 48">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img49.jpg" alt="Image 49">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img50.jpg" alt="Image 50">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img51.jpg" alt="Image 51">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img52.jpg" alt="Image 52">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img53.jpg" alt="Image 53">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img54.jpg" alt="Image 54">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img55.jpg" alt="Image 55">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img56.jpg" alt="Image 56">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img57.jpg" alt="Image 57">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img58.jpg" alt="Image 58">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img59.jpg" alt="Image 59">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img60.jpg" alt="Image 60">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img61.jpg" alt="Image 61">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img62.jpg" alt="Image 62">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img63.jpg" alt="Image 63">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img64.jpg" alt="Image 64">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img65.jpg" alt="Image 65">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img66.jpg" alt="Image 66">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img67.jpg" alt="Image 67">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img68.jpg" alt="Image 68">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img69.jpg" alt="Image 69">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img70.jpg" alt="Image 70">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img71.jpg" alt="Image 71">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img72.jpg" alt="Image 72">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img73.jpg" alt="Image 73">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img74.jpg" alt="Image 74">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img75.jpg" alt="Image 75">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img76.jpg" alt="Image 76">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img77.jpg" alt="Image 77">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img78.jpg" alt="Image 78">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img79.jpg" alt="Image 79">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img80.jpg" alt="Image 80">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img81.jpg" alt="Image 81">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img82.jpg" alt="Image 82">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img83.jpg" alt="Image 83">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img84.jpg" alt="Image 84">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img85.jpg" alt="Image 85">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img86.jpg" alt="Image 86">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img87.jpg" alt="Image 87">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img88.jpg" alt="Image 88">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img89.jpg" alt="Image 89">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img90.jpg" alt="Image 90">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img91.jpg" alt="Image 91">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img92.jpg" alt="Image 92">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img93.jpg" alt="Image 93">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img94.jpg" alt="Image 94">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img95.jpg" alt="Image 95">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img96.jpg" alt="Image 96">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img97.jpg" alt="Image 97">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img98.jpg" alt="Image 98">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img99.jpg" alt="Image 99">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img100.jpg" alt="Image 100">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img101.jpg" alt="Image 101">
+                                        </div>
+                                        <div class="carousel__slide">
+                                            <img src="Pics/Anime Carousel 3/Img102.jpg" alt="Image 102">
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <input type="radio" class="tabs__radio" name="tabs-profile" id="tab-contact">
+                <label for="tab-contact" class="tabs__label">Contact</label>
+                <div class="tabs__content">
+                    <div class="contact-email">
+                        <div class="row">
+                            <div class="contact-context">
+                                <h1>You can reach me at these channels!</h1>
+                                <h2><a href="https://www.facebook.com/IrvinBronia" target="_blank">Facebook: Irvin C. Bronia</a></h2>
+                                <h2>Gmail: <span class="email">irvinc.bronia@gmail.com</span><br><span class="email">irvinbronia@gmail.com</span></h2>
+                                <h2>Or you can send me a message by filling up the form!</h2>
+                                <h6><i>Note: This goes to an alternate email to avoid cluttering my main email</i></h6>
+                            </div>
+                            
+                            <div class="contact-send">
+                                <div class="form-group">
+                                    <h5 for="name">Name:</h5>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter Your Name"/>
+                                </div>
+                                <div class="form-group">
+                                    <h5 for="email">Email:</h5>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter Your Email"/>
+                                </div>
+                                <div class="form-group">
+                                    <h5 for="message">Message:</h5>
+                                    <textarea id="message" rows="3" class="form-control"></textarea>
+                                </div>
+                                <button class="btn" onclick="sendMail()">Send</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+        <script src="script.js"></script>
+    
+    </body>
+</html>

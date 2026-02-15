@@ -1,0 +1,1017 @@
+    @import url('https://fonts.googleapis.com/css2?family=DIN:ital,wght@0,400;0,700;1,400&display=swap');
+    /* Replace with the correct font import if required */
+
+    body {
+        margin: 30px;
+
+
+        /*background-image: url("C:\\Users\\irvin\\OneDrive\\Documents\\CNSC\\2nd Year\\App Dev\\Pics\\star-rail-dream's-edge.gif"); 
+        background-size: cover;  
+        background-repeat: no-repeat; 
+        background-position: center;  
+        background-attachment: fixed;
+        height: 100vh; */
+    }
+
+    .back-video {
+        position: fixed;
+        top: 50%;
+        /* Align vertically */
+        left: 50%;
+        /* Align horizontally */
+        transform: translate(-50%, -50%);
+        /* Center the video */
+        z-index: -1;
+        width: 112%;
+        /* Set width to 100% to fill the container */
+        height: 100%;
+        /* Set height to 100% to fill the container */
+        object-fit: cover;
+        /* Ensures the video fills the container properly */
+
+
+    }
+
+    /* Zoom in on smaller screens */
+    @media (min-width: 320px) and (max-width: 767px) {
+        .back-video {
+            width: 100%;
+            /* Maintain full width */
+            height: 100%;
+            /* Maintain full height */
+            object-position: center;
+            /* Ensure content stays centered */
+        }
+
+        .tabs__label {
+            font-size: 10px;
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+        .back-video {
+            width: 100%;
+            /* Maintain full width */
+            height: 100%;
+            /* Maintain full height */
+            object-position: center;
+            /* Ensure content stays centered */
+        }
+    }
+
+
+
+
+/* Eye toggle checkbox */
+.eye-toggle {
+    display: none;
+    /* Hide the checkbox itself */
+}
+
+/* Eye button */
+.eye-button {
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: fixed;
+    top: 20px; /* Keep this value as is */
+    right: 20px; /* Move it to where the sound button was */
+    /* Offset from sound button */
+    color: #f0f1c7;
+    z-index: 10;
+}
+
+/* Initially, show all content */
+body * {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* When the checkbox is checked, hide the content, keep the eye button and sound button visible */
+.eye-toggle:checked~.content {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Prevent the eye button from being hidden */
+.eye-toggle:checked~.eye-button,
+.eye-toggle:checked~.sound-button {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Sound button */
+.sound-button {
+    font-size: 1.2rem;
+    position: fixed;
+    top: 20px; /* Keep this value as is */
+    right: 60px; /* Move it to where the eye button was */
+    /* Place near the eye button */
+    background: none;
+    border: none;
+    color: #f0f1c7;
+    visibility: hidden;
+    /* Initially hidden */
+    opacity: 0;
+    z-index: 10;
+}
+
+
+
+
+
+    .content {
+        width: 100%;
+        height: fit-content;
+    }
+
+
+    .header {
+        background-color: #428a91;
+        /* Highlight color */
+        color: #f0f1c7;
+        /* Text color matching the background */
+        padding: 20px 40px;
+        border: 3px solid #2d626a;
+        /* Dark accent border */
+        border-radius: 15px;
+        text-align: center;
+        font-size: 1.5rem;
+        box-shadow: 0 4px 6px rgba(45, 98, 106, 0.5);
+        /* Subtle shadow */
+        max-width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 60px;
+    }
+
+   @media (max-width: 425px) {
+    .header-titles{
+        font-size: large ;
+    }
+   }
+
+    .header:hover {
+        background-color: #6f9c97;
+        /* Slightly lighter on hover */
+        color: #2d626a;
+        /* Darker color on hover */
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=DIN:ital,wght@0,400;0,700;1,400&display=swap');
+    /* Replace with the correct font import if required */
+
+    .tabs {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        font-family: 'DIN', sans-serif;
+        /* Use PF DIN TEXT PRO MEDIUM or fallback */
+        background-color: rgba(174, 205, 199, 0.65);
+        /* Light teal background with slight transparency */
+        padding: 15px;
+        /* Add some padding for spacing */
+        border-radius: 10px;
+        /* Rounded corners for a modern look */
+        box-shadow: 0 4px 6px rgba(45, 98, 106, 0.2);
+        /* Subtle shadow for depth */
+        color: rgba(45, 98, 106, 0.65);
+        /* Base text color with slight transparency */
+    }
+
+    .tabs {
+        display: flex;
+        flex-direction: row;
+        /* Stack the labels and content vertically */
+    }
+
+
+    .tabs__label {
+        padding: 10px 16px;
+        cursor: pointer;
+        font-family: 'DIN', sans-serif;
+        /* Use PF DIN TEXT PRO MEDIUM or fallback */
+        background-color: rgba(111, 156, 151, 0.65);
+        /* Teal button-like background with slight transparency */
+        color: rgba(240, 241, 199, 0.65);
+        /* Light text color with slight transparency */
+        border: 2px solid rgba(66, 138, 145, 0.65);
+        /* Muted accent border with slight transparency */
+        border-radius: 5px;
+        /* Slightly rounded corners */
+        margin: 5px;
+        /* Add spacing between labels */
+        transition: background-color 0.3s ease, color 0.3s ease;
+        /* Smooth hover effects */
+    }
+
+
+    .tabs__label:hover {
+        background-color: #428a91;
+        /* Slightly darker teal on hover */
+        color: #f0f1c7;
+        /* Keep text color consistent */
+    }
+
+    .tabs__label:active {
+        background-color: #d8db9f;
+        /* Vibrant orange for active state */
+        color: #f0f1c7;
+        /* Keep light text for contrast */
+    }
+
+    /* Active tab when selected */
+    .tabs__radio:checked+.tabs__label {
+        background-color: #d8db9f;
+        /* Active orange background */
+        color: #f0f1c7;
+        /* Text color remains light for readability */
+        border-bottom: 3px solid #428a91;
+        /* Teal border for active tab */
+    }
+
+
+
+
+    .tabs__radio {
+        display: none;
+    }
+
+    .tabs__content {
+        order: 1;
+        width: 100%;
+        height: fit-content;
+        display: none;
+        /* Hidden by default */
+        align-items: center;
+        /* Centers content horizontally */
+        justify-content: center;
+        /* Centers content vertically */
+        text-align: center;
+        /* Centers the text inside */
+        font-weight: bolder;
+        /* Bold text */
+        line-height: 1.6;
+        /* Comfortable line height */
+        font-size: 1rem;
+        /* Base font size */
+        font-family: 'DIN', sans-serif;
+        /* Use DIN font or fallback */
+
+        /* Styling properties */
+        background-color: rgba(240, 241, 199, 0.65);
+        /* Light transparent background */
+        color: rgba(45, 98, 106, 0.7);
+        /* Darker transparent text */
+        padding: 20px;
+        /* Space inside the content */
+        border: 3px solid rgba(111, 156, 151, 0.7);
+        /* Muted border with transparency */
+        border-radius: 10px;
+        /* Rounded corners for a modern look */
+        box-shadow: 0 4px 6px rgba(45, 98, 106, 0.2);
+        /* Soft shadow for depth */
+
+        /* Transitions for interactivity */
+        transition: background-color 0.3s ease, color 0.3s ease;
+        /* Smooth hover effect */
+    }
+
+
+    .home-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    .home-text{
+        font-size: 1.3rem;
+    }
+
+    .home-image-left,
+    .home-image-right {
+        margin: 10px;
+    }
+
+    .home-image-left img{
+        object-fit: cover;
+        object-position: 70%;
+        width: 200px;
+        height: 500px
+    }
+
+    .home-image-right img {
+        object-fit: cover;
+        object-position: 25%;
+        width: 200px;
+        height: 500px
+    }
+
+    @media (max-width: 768px) {
+
+        /* For small phones and horizontal tablets */
+        .home-image-left img,
+        .home-image-right img {
+            object-position: center 1%;
+            /* Center horizontally */
+            object-fit: cover;
+            width: 400px;
+            /* Stretch to fill available width */
+            height: 200px;
+            /* Maintain aspect ratio */
+        }
+
+        .home-text {
+            padding: 20px;
+            font-size: x-large;
+        }
+    }
+
+    @media (max-width: 426px) {
+
+        /* For small phones and horizontal tablets */
+        .home-image-left img,
+        .home-image-right img {
+            object-position: center 1%;
+            /* Center horizontally */
+            object-fit: cover;
+            width: 210px;
+            /* Stretch to fill available width */
+            height: 110px;
+            /* Maintain aspect ratio */
+        }
+
+        .home-text {
+            padding: 20px;
+            font-size: xx-small;
+        }
+    }
+
+    .about-me-container {
+        display: flex;
+        /* Use flexbox for layout */
+        align-items: center;
+        /* Align items at the top */
+        justify-content: space-evenly;
+        border-bottom: 2px solid #2d626a; /* Add a thin border below */
+    }
+    
+    .about-me-container-reverse {
+        display: flex;
+        /* Use flexbox for layout */
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        /* Align items at the top */
+        justify-content: space-evenly;
+        border-bottom: 2px solid #2d626a; /* Add a thin border below */
+
+    }
+
+    .about-me-text {
+        margin-bottom: 30px;
+        padding: 20px;
+        color: #2d626a;
+        /* Darker teal for text */
+        border-radius: 8px;
+        /* Rounded text box */
+        font-size: x-large;
+        line-height: 1.5;
+        /* Improve readability */
+    }
+
+    .about-me-text-header {
+        margin-bottom: 30px;
+        padding: 20px;
+        color: #FF9900;
+        /* Darker teal for text */
+        border-radius: 8px;
+        /* Rounded text box */
+        font-size: xx-large;
+        line-height: 1.5;
+        /* Improve readability */
+    }
+
+    .about-me-image img {
+        width: 350px;
+        /* Restrict image width */
+        margin-bottom: 10%;
+        margin-top: 50px;
+        align-items: center;
+        object-fit: cover;
+        /* Ensure the image fits nicely */
+        border-radius: 50%;
+        /* Circular images for a modern look */
+        border: 3px solid #ffa118;
+        /* Slight border around the image */
+    }
+
+    .family-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid #2d626a;
+        /* Dark accent line */
+        border-top: 2px solid #2d626a;
+        /* Dark accent line */
+        margin-bottom: 20px;
+        /* Slightly increase spacing below the container */
+        padding: 30px;
+        /* Add more spacing around the container */
+        border-radius: 108px;
+        /* Soften corners */
+        gap: 20px;
+        /* Add spacing between child elements */
+    }
+
+    .family-name {
+        color: #FF9900;
+        /* Darker orange for text */
+        font-size: 2rem;
+        /* Use rem units for better scalability */
+        line-height: 1.5;
+        /* Improve readability */
+        font-weight: bold;
+        /* Emphasize the name */
+        margin: 0;
+        /* Remove unnecessary margins */
+    }
+
+    .icon-name {
+        color: #FF9900;
+        /* Keep the same color for consistency */
+        font-size: 2rem;
+        /* Match the size of family-name */
+        line-height: 1.5;
+        /* Improve readability */
+        visibility: hidden;
+        /* Hide the text but maintain space */
+    }
+
+    .family-image-left,
+    .family-image-right {
+        margin: 0;
+        /* Reset default margins */
+    }
+
+    .family-image-left img,
+    .family-image-right img {
+        object-fit: cover;
+        width: 250px;
+        /* Adjust image size for better balance */
+        height: 250px;
+        border-radius: 50%;
+        /* Circular images for a modern look */
+        border: 3px solid #ffa118;
+        /* Slightly thicker border for emphasis */
+    }
+
+    .family-text {
+        /* Increase spacing around the text */
+        color: #2d626a;
+        font-size: 1.3rem;
+       
+        /* Rounded text box */
+        font-family: 'Arial', sans-serif;
+        /* Use rem units for consistency */
+    }
+
+    @media (max-width: 426px) {
+        .tabs{
+            width: 90%;
+        }
+        .tabs__content{
+            width: 85%;
+        }
+        .tabs__label{
+            font-size: x-small;
+        }
+    }
+    @media (max-width: 768px) {
+
+        /* Target devices with a width of 768px or less (e.g., phones, small tablets) */
+        .home-container,
+        .about-me-container,
+        .about-me-container-reverse,
+        .family-container {
+            flex-direction: column;
+            /* Stack elements vertically */
+            align-items: center;
+            /* Center align the content */
+            justify-content: center;
+            /* Center justify the content */
+        
+        }
+
+
+        .about-me-image img,
+        .family-image-left img,
+        .family-image-right img {
+            width: 150px;
+            /* Shrink images for smaller screens */
+            height: auto;
+            /* Maintain aspect ratio */
+            margin: 10px 0;
+            /* Add spacing around images */
+        }
+
+        .about-me-text {
+            font-size: 0.95rem;
+            /* Adjust font size for better readability */
+            /* Reduce padding */
+        }
+
+        .family-text {
+            font-size: 0.85rem;
+            /* Adjust font size for better readability */
+            /* Reduce padding */
+        }
+
+        .about-me-text-header {
+            font-size: 1.2rem;
+            /* Reduce header font size */
+        }
+
+        .family-name,
+        .icon-name {
+            font-size: 1.5rem;
+            /* Adjust text size */
+        }
+
+        .home-text {
+            font-size: 1rem;
+            /* Reduce font size for smaller screens */
+            text-align: center;
+            /* Center-align text for better readability */
+        }
+
+        .family-container {
+            gap: 10px;
+            /* Reduce gap between elements */
+            border-radius: 8px;
+            /* Slightly rounder corners */
+        }
+
+        .about-me-image img {
+            width: 170px;
+            /* Smaller image size for portrait layouts */
+            border-radius: 50%;
+            /* Keep circular shape */
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .family-text{
+            font-size: 1.1rem;
+        }
+    }
+
+
+    .gallery-container {
+        width: 100%;
+        margin: 20px auto; /* Center the container */
+    }
+    .gallery-text {
+        font-size: 1.5rem;
+        text-align: center; /* Center the text */
+        margin-bottom: 10px; /* Space below the text */
+    }
+
+    .gallery-header-text{
+        font-size: xx-large;
+    }
+    
+    
+    .carousel {
+        position: relative;
+        width: 80%; /* Adjust as needed */
+        margin: auto; /* Center the carousel */
+        overflow: hidden; /* Hide overflow */
+        color: #2d626a;
+        touch-action: pan-y; /* Prevent vertical scrolling while swiping */
+    
+    }
+    /* Base styles for carousels */
+    /*#carousel1, #carousel5 {
+        width: 500px; /* Set a fixed width 
+        height: 500px; /* Set a fixed height for 1x1 aspect ratio 
+        padding: 10px;
+    }*/
+
+    #carousel1, #carousel5,#carousel2, #carousel3, #carousel4 {
+        width: 450px; /* Set a fixed width */
+        height: fit-content; /* Set height to maintain 1x1 aspect ratio */
+        padding: 10px;
+    }
+
+    
+
+    .three-way-slider {
+        display: flex;
+        flex-direction: row;
+        padding: 75px;
+        justify-content: space-around;
+    }
+    .carousel__button {
+        background-color: rgba(66, 138, 145, 0.8); /* Adds transparency to the background */
+        color: rgba(240, 241, 199, 0.9); /* Slight transparency for text */
+        border: 3px solid rgba(45, 98, 106, 0.8); /* Adds transparency to the border */
+        border-radius: 15px; /* Rounded corners */
+        cursor: pointer;
+        font-size: 1.2rem; /* Font size */
+        box-shadow: 0 4px 6px rgba(45, 98, 106, 0.5); /* Keeps the box-shadow transparent */
+        width: 3%;
+        padding: 5px;
+    }
+
+    .carousel__button-three {
+        background-color: rgba(66, 138, 145, 0.8); /* Adds transparency to the background */
+        color: rgba(240, 241, 199, 0.9); /* Slight transparency for text */
+        border: 3px solid rgba(45, 98, 106, 0.8); /* Adds transparency to the border */
+        border-radius: 15px; /* Rounded corners */
+        cursor: pointer;
+        font-size: 1.2rem; /* Font size */
+        box-shadow: 0 4px 6px rgba(45, 98, 106, 0.5); /* Keeps the box-shadow transparent */
+        width: 8%;
+        padding: 5px;
+        margin-left: 10px;
+        margin-right: 10px;    }
+    /* Media Queries for Responsive Design */
+
+    @media (max-width: 1440px) {
+        
+
+        #carousel1, #carousel5 ,#carousel2, #carousel3, #carousel4 {
+            width: 80%; /* Use a percentage for smaller screens */
+            height: auto; /* Allow height to adjust based on content */
+        }
+
+        .three-way-slider {
+            display: flex !important;
+            flex-direction: row !important; /* Stack carousels vertically */
+            padding: 1px;
+        }
+        .carousel__button-three{
+            margin: 5px;
+            width: 15%;
+        }
+
+        .carousel__button{
+            margin: 5px;
+            width: 15%;
+        }
+    }   
+
+    @media (max-width: 769px) {}
+    @media (max-width: 769px) {
+       
+
+        #carousel1, #carousel5 ,#carousel2, #carousel3, #carousel4 {
+            width: 95%; /* Use a percentage for smaller screens */
+            height: auto; /* Allow height to adjust based on content */
+            margin: 0px;
+        }
+
+        .three-way-slider {
+            display: flex !important;
+            flex-direction: column !important; /* Stack carousels vertically */
+            width: 100%;
+            padding: 1px;
+            margin-left: 0px;
+
+        }
+        .carousel__button-three{
+            margin: 5px;
+            width: 15%;
+        }
+
+        .carousel__button{
+            margin: 5px;
+            width: 15%;
+        }
+    }   
+    @media (max-width: 426px) {
+
+        .gallery-header-text{
+            font-size: medium;
+        }
+        #carousel1, #carousel5 {
+            width: 90%; /* Use a percentage for smaller screens */
+            height: auto; /* Allow height to adjust based on content */
+        }
+
+        #carousel2, #carousel3, #carousel4 {
+            width: 80%; /* Use a percentage for smaller screens */
+            height: auto; /* Allow height to adjust based on content */
+            margin-left: 10px;
+        }
+
+        .three-way-slider {
+            display: flex !important;
+            flex-direction: column !important; /* Stack carousels vertically */
+            width: 100%;
+            padding: 1px;
+            margin-left: 0px;
+
+        }
+        .carousel__button-three{
+            margin: 5px;
+            width: 15%;
+        }
+
+        .carousel__button{
+            margin: 5px;
+            width: 15%;
+        }
+    }
+
+   
+    
+    
+    .carousel__slide img {
+        border: 3px solid #2d626a; /* Set border width, style, and color */
+    }
+
+
+ 
+
+    
+    .three-way-slider-container-text{
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 95%;
+    }
+
+    .three_way_header{
+        font-size: x-large;
+    }
+    .carousel__slides {
+        display: flex;
+        transition: transform 0.5s ease; /* Smooth transition */
+    }
+    
+    .carousel__slide {
+        min-width: 100%; /* Each slide takes full width */
+        box-sizing: border-box;
+        display: none; /* Hide all slides initially */
+    }
+
+    .carousel__slide-three {
+        box-sizing: border-box;
+        display: none; /* Hide all slides initially */
+    }
+    
+    .carousel__slide.active {
+        display: block; /* Show only the active slide */
+    }
+    
+    .carousel__slide img {
+        width: 100%; /* Make images responsive to fit the container */
+        height: 100%; /* Force the image to fill the height of the container */
+        object-fit: cover; /* Cover the entire area of the slide */
+        object-position: center; /* Center the image in the slide */
+    }
+    
+    /*.carousel__button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.7);
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 20; /* Ensure buttons are on top 
+    }*/
+    
+    
+    
+    
+
+        /* Add hover effects for the content */
+        /*
+        .tabs__content:hover {
+            background-color: #aecdc7; 
+            color: #428a91;
+        }
+        */
+        /* Optional: Style the <br> tag for consistency */
+        .tabs__content br {
+            margin-bottom: 8px;
+            /* Add spacing between lines for better readability */
+        }
+
+
+
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            width: 95%;
+            height: fit-content;
+        }
+        
+        .contact-context {
+            width: 50%;
+            margin: 0 auto; /* Centers the content horizontally */
+            padding: 20px;
+            background-color: rgba(240, 241, 199, 0.75);
+            color: rgba(45, 98, 106, 0.9);
+            border: 3px solid rgba(111, 156, 151, 0.8);
+            border-radius: 12px; /* Rounded corners for modern design */
+            box-shadow: 0 4px 8px rgba(45, 98, 106, 0.3);
+            text-align: center;
+            font-family: 'DIN', sans-serif;
+            line-height: 1.6;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+       
+        .contact-context h1 {
+            font-size: 2rem;
+            font-weight: bolder;
+            margin-bottom: 10px;
+        }
+        
+        .contact-context h2 {
+            margin: 10px 0;
+            font-size: 2rem;
+        }
+        
+        .contact-context h6 {
+            font-size: 0.9rem;
+            color: rgba(45, 98, 106, 0.6);
+            margin-top: 10px;
+        }
+        
+        .contact-context a {
+            color: rgba(45, 98, 106, 0.9);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-context a:hover {
+            color: rgba(111, 156, 151, 0.9);
+        }
+        
+        .contact-context .email {
+            font-weight: normal;
+            color: rgba(45, 98, 106, 0.8);
+        }
+
+        @media (max-width:426px) {
+            .contact-context h1 {
+                font-size: 1rem;
+                font-weight: bolder;
+            }
+            
+            .contact-context h2 {
+                font-size: 1rem;
+            }
+
+            .email{
+                font-size: 1rem;
+            }
+            
+            .contact-context h6 {
+                font-size: 1rem;
+                color: rgba(45, 98, 106, 0.6);
+            }
+        }
+        
+        
+        .contact-send {
+            display: flex;
+            width: 50%;
+            padding: 30px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px; /* Optional: Adds space between each form group */
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+        
+        .form-group h5 {
+            margin-bottom: 5px; /* Space between the label and the input */
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        
+        .form-control {
+            width: 100%; /* Makes the input take full width */
+            height: fit-content;
+            padding: 10px 15px;
+            font-size: 1rem;
+            font-family: 'DIN', sans-serif;
+            font-weight: bold;
+            line-height: 1.6;
+            background-color: rgba(240, 241, 199, 0.65);
+            color: rgba(45, 98, 106, 0.7);
+            border: 3px solid rgba(111, 156, 151, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(45, 98, 106, 0.2);
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .btn {
+            width: 100%; /* Makes the input take full width */
+            height: fit-content;
+            padding: 10px 15px;
+            font-size: 1rem;
+            font-family: 'DIN', sans-serif;
+            font-weight: bold;
+            line-height: 1.6;
+            background-color: rgba(240, 241, 199, 0.65);
+            color: rgba(45, 98, 106, 0.7);
+            border: 3px solid rgba(111, 156, 151, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(45, 98, 106, 0.2);
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .btn:hover, .btn:focus, .btn:active {
+            background-color: rgba(255, 161, 24, 0.7); /* Transparent color */
+            color: rgba(45, 98, 106, 1);
+            border-color: rgba(111, 156, 151, 1);
+        }
+        
+        
+        .form-control:focus {
+            background-color: rgba(240, 241, 199, 1);
+            color: rgba(45, 98, 106, 1);
+            border-color: rgba(111, 156, 151, 1);
+            outline: none;
+        }
+        @media (max-width: 768px) {
+            .row{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-content: space-around;
+            }
+
+
+            .contact-context{
+                padding: 15px;
+                margin: 0px;
+                width: 90%;
+            }
+            .contact-send {
+                width: 90%; /* Make form elements take full width on smaller screens */
+                padding: 0px
+            }
+
+            .form-group h5 {
+                font-size: 0.9rem; /* Adjust font size for smaller screens */
+            }
+
+            .form-control {
+                font-size: 0.9rem; /* Adjust font size for smaller screens */
+            }
+
+            .btn {
+                padding: 10px 15px; /* Adjust padding for smaller screens */
+                font-size: 0.9rem; /* Adjust font size for smaller screens */
+            }
+        }
+
+        @media (max-width: 426px) {
+            .row{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-content: space-around;
+            }
+
+
+            .contact-context{
+                padding: 15px;
+                margin: 0px;
+                width: 90%;
+            }
+        }
+    .tabs__radio:checked+.tabs__label {
+        font-weight: bold;
+        color: #2d626a;
+        border-bottom: 2px solid #2d626a;
+    }
+
+    .tabs__radio:checked+.tabs__label+.tabs__content {
+        display: initial;
+    }
+
