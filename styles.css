@@ -64,7 +64,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 112%; /* slightly larger to fill edges like before */
+    width: 200; /* slightly larger to fill edges like before */
     height: 100%;
     z-index: -1; /* behind content */
     pointer-events: none; /* makes the iframe completely non-interactive */
@@ -1060,6 +1060,7 @@ body * {
     .tabs__radio:checked+.tabs__label+.tabs__content {
         display: initial;
     }
+
 
 
 
