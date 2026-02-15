@@ -72,9 +72,15 @@
 }
 
 .video-background iframe {
-    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 112%; /* slightly larger to fill edges like before */
     height: 100%;
-    object-fit: cover; /* fills container */
+    z-index: -1; /* behind content */
+    pointer-events: none; /* makes the iframe completely non-interactive */
+    overflow: hidden;
 }
 
 /* Zoom in on smaller screens */
@@ -1054,5 +1060,6 @@ body * {
     .tabs__radio:checked+.tabs__label+.tabs__content {
         display: initial;
     }
+
 
 
