@@ -63,24 +63,23 @@
     position: fixed;
     top: 50%;
     left: 50%;
+    width: 100%;
+    height: 100%;
     transform: translate(-50%, -50%);
-    width: 1000%; /* slightly larger to fill edges like before */
-    height: 200%;
-    z-index: -1; /* behind content */
-    pointer-events: none; /* makes the iframe completely non-interactive */
+    z-index: -1;
     overflow: hidden;
+    pointer-events: none;
 }
 
 .video-background iframe {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1000%; /* slightly larger to fill edges like before */
-    height: 500%;
-    z-index: -1; /* behind content */
-    pointer-events: none; /* makes the iframe completely non-interactive */
-    overflow: hidden;
+    width: 120%;          /* slightly larger than container */
+    height: 120%;         /* slightly taller than container */
+    transform: translate(-50%, -50%) scale(1.2); /* scale video inside iframe */
+    z-index: -1;
+    pointer-events: none;
 }
 
 /* Zoom in on smaller screens */
@@ -1060,6 +1059,7 @@ body * {
     .tabs__radio:checked+.tabs__label+.tabs__content {
         display: initial;
     }
+
 
 
 
