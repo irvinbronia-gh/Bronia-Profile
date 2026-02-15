@@ -81,6 +81,13 @@
     z-index: -1;
     pointer-events: none;
 }
+@media (max-width: 767px) {
+    .video-background iframe {
+        width: 150%;
+        height: 150%;
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+}
 
 /* Zoom in on smaller screens */
 @media (min-width: 320px) and (max-width: 767px) {
@@ -1059,6 +1066,7 @@ body * {
     .tabs__radio:checked+.tabs__label+.tabs__content {
         display: initial;
     }
+
 
 
 
